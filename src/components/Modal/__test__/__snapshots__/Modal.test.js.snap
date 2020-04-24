@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Modal/> Snapshot 1`] = `
+exports[`<Modal/> Snapshot Modal 1`] = `
 <div
   class="modal "
   data-testid="modal"
@@ -9,6 +9,39 @@ exports[`<Modal/> Snapshot 1`] = `
   <div
     class="modal__body"
   />
+  <div
+    class="modal__overlay"
+  />
+</div>
+`;
+
+exports[`<Modal/> Snapshot Modal with header 1`] = `
+<div
+  class="modal "
+  data-testid="modal"
+  role="dialog"
+>
+  <div
+    class="modal__body"
+  >
+    <header
+      class="modal__header"
+    >
+      <h1>
+        Engagement Process
+         
+        <label>
+          Abandoned
+        </label>
+      </h1>
+      <h4>
+        2019 Fall Oncology Advisory Board
+      </h4>
+      <button>
+        x
+      </button>
+    </header>
+  </div>
   <div
     class="modal__overlay"
   />

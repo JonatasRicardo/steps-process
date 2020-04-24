@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button/> Button children 1`] = `
+<button
+  class="button "
+  data-testid="button"
+>
+  Click me
+</button>
+`;
+
+exports[`<Button/> Button light 1`] = `
+<button
+  class="button light"
+  data-testid="button"
+>
+  Click me
+</button>
+`;
