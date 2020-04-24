@@ -1,6 +1,6 @@
 ## Stepper
 
-Stepper app made usign React, Redux, HTML5 and SASS.
+Stepper app made with React, Redux, HTML5 and SASS.
 
 Demo: [https://jonatasricardo-react-stepper.netlify.app/](https://jonatasricardo-react-stepper.netlify.app/)
 
