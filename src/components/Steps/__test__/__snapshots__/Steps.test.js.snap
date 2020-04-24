@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StepsContainer><StepItem/></StepsContainer> Snapshot 1`] = `
+<div
+  class="steps-container"
+  data-testid="steps-container"
+  role="list"
+>
+  <div
+    class="step-item is-done is-next-done"
+    data-testid="step-item"
+    role="listitem"
+  >
+    <span
+      class="step-item__icon"
+    >
+      <span>
+        <svg
+          aria-hidden="true"
+          aria-labelledby="step done"
+          class="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="step-item__index"
+        >
+          1
+        </span>
+      </span>
+    </span>
+    <div
+      class="step-item__title"
+    >
+      Draft
+    </div>
+    <div
+      class="step-item__status"
+    >
+      <div
+        class="step-item__status-name"
+      >
+        Created on
+      </div>
+      <div
+        class="step-item__status-date"
+      >
+        01/31/2020
+      </div>
+    </div>
+  </div>
+  <div
+    class="step-item is-done is-next-done"
+    data-testid="step-item"
+    role="listitem"
+  >
+    <span
+      class="step-item__icon"
+    >
+      <span>
+        <svg
+          aria-hidden="true"
+          aria-labelledby="step done"
+          class="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="step-item__index"
+        >
+          2
+        </span>
+      </span>
+    </span>
+    <div
+      class="step-item__title"
+    >
+      Pending Approval
+    </div>
+    <div
+      class="step-item__status"
+    >
+      <div
+        class="step-item__status-name"
+      >
+        Approval sent
+      </div>
+      <div
+        class="step-item__status-date"
+      >
+        02/14/2020
+      </div>
+    </div>
+  </div>
+  <div
+    class="step-item is-done is-next-done"
+    data-testid="step-item"
+    role="listitem"
+  >
+    <span
+      class="step-item__icon"
+    >
+      <span>
+        <svg
+          aria-hidden="true"
+          aria-labelledby="step done"
+          class="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="step-item__index"
+        >
+          3
+        </span>
+      </span>
+    </span>
+    <div
+      class="step-item__title"
+    >
+      Approved
+    </div>
+    <div
+      class="step-item__status"
+    >
+      <div
+        class="step-item__status-name"
+      >
+        Abandoned on
+      </div>
+      <div
+        class="step-item__status-date"
+      >
+        02/20/2020
+      </div>
+    </div>
+  </div>
+  <div
+    class="step-item is-done is-next-done"
+    data-testid="step-item"
+    role="listitem"
+  >
+    <span
+      class="step-item__icon"
+    >
+      <span>
+        <svg
+          aria-hidden="true"
+          aria-labelledby="step done"
+          class="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="step-item__index"
+        >
+          4
+        </span>
+      </span>
+    </span>
+    <div
+      class="step-item__title"
+    >
+      Execute
+    </div>
+    <div
+      class="step-item__status"
+    />
+  </div>
+  <div
+    class="step-item is-done is-next-done"
+    data-testid="step-item"
+    role="listitem"
+  >
+    <span
+      class="step-item__icon"
+    >
+      <span>
+        <svg
+          aria-hidden="true"
+          aria-labelledby="step done"
+          class="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="step-item__index"
+        >
+          5
+        </span>
+      </span>
+    </span>
+    <div
+      class="step-item__title"
+    >
+      Concluded
+    </div>
+    <div
+      class="step-item__status"
+    />
+  </div>
+  <div
+    class="step-item is-done "
+    data-testid="step-item"
+    role="listitem"
+  >
+    <span
+      class="step-item__icon"
+    >
+      <span>
+        <svg
+          aria-hidden="true"
+          aria-labelledby="step done"
+          class="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="step-item__index"
+        >
+          6
+        </span>
+      </span>
+    </span>
+    <div
+      class="step-item__title"
+    >
+      Closed
+    </div>
+    <div
+      class="step-item__status"
+    />
+  </div>
+</div>
+`;
