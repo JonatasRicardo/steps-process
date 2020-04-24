@@ -37,7 +37,9 @@ exports[`<Modal/> Snapshot Modal with header 1`] = `
       <h4>
         2019 Fall Oncology Advisory Board
       </h4>
-      <button>
+      <button
+        data-testid="btn-close-modal"
+      >
         x
       </button>
     </header>

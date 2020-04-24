@@ -22,7 +22,7 @@ function ModalHeader(props) {
         <header className="modal__header">
             <h1>{title} {label && <label>{label}</label>}</h1>
             <h4>{subtitle}</h4>
-            {hasCloseButton && <button onClick={onCloseButtonClick}>x</button>}
+            {hasCloseButton && <button onClick={onCloseButtonClick} data-testid="btn-close-modal">x</button>}
         </header>
     );
 }

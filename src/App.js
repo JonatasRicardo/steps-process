@@ -8,7 +8,7 @@ import ModalSteps from './containers/ModalSteps';
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="App" data-testid="app">
         <ModalSteps />
       </div>
     </Provider>

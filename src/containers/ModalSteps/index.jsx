@@ -32,7 +32,7 @@ function ModalSteps(props) {
 
   return (
     <div>
-        <Button onClick={modalToggle}>Open Modal</Button>
+        <Button onClick={modalToggle} data-testid="btn-open-modal">Open Modal</Button>
         <Modal active={modal}>
             <ModalHeader
                 title="Engagement Process"
