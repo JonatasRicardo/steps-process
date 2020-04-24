@@ -1,9 +1,4 @@
-$colorWhite: #ffffff;
-$colorGray: #b3b3b3;
-$colorBlack: #000;
-$colorGreen: #6cc038;
-$colorBlue: #2e68f1;
-$colorRed: #c10000;
+@import '../../theme.scss';
 
 .steps-container{
     flex-direction: row;
