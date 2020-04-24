@@ -7,15 +7,14 @@ const propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node
     ]),
-    light: PropTypes.bool,
+    light: PropTypes.bool
 }
 
 const defaultProps = {
     light: false,
 }
 
-function Button(props) {
-    const { children, light } = props;
+function Button({ children, light, ...props }) {
     const lightCLass = light ? 'light' : '';
     return (
         <button className={`button ${lightCLass}`} data-testid="button" {...props}>
