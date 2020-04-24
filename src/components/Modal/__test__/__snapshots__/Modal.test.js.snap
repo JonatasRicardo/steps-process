@@ -2,7 +2,7 @@
 
 exports[`<Modal/> Snapshot Modal 1`] = `
 <div
-  class="modal "
+  class="modal  "
   data-testid="modal"
   role="dialog"
 >
@@ -17,7 +17,7 @@ exports[`<Modal/> Snapshot Modal 1`] = `
 
 exports[`<Modal/> Snapshot Modal with header 1`] = `
 <div
-  class="modal "
+  class="modal  "
   data-testid="modal"
   role="dialog"
 >
