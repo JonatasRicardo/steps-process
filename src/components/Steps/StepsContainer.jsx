@@ -1,5 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './steps.scss';
+
+const propTypes = {
+    currentStep: PropTypes.number,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ]),
+}
+
+const defaultProps = {
+    currentStep: -1,
+    stepIndex: 0,
+}
 
 function StepsContainer(props) {
     const { children, currentStep } = props;
@@ -15,5 +29,8 @@ function StepsContainer(props) {
         </div>
     )
 }
+
+StepsContainer.propTypes = propTypes;
+StepsContainer.defaultProps = defaultProps;
 
 export default StepsContainer;
