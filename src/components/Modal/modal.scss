@@ -81,8 +81,13 @@
         height: 100%;
     }
 
+    &.is-updated{
+        animation: fadeOut .5s;
+        animation-fill-mode: forwards;
+    }
+
     &.is-active {
-        animation: fade 1s;
+        animation: fadeIn 1s;
         animation-fill-mode: forwards;
         .modal__body{
             animation: fromBottom 1s;
@@ -94,7 +99,7 @@
     }
 }
 
-@keyframes fade {
+@keyframes fadeIn {
     from {
         z-index: -1;
         opacity: 0;
@@ -102,6 +107,18 @@
     to {
         z-index: 1;
         opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        z-index: 1;
+        opacity: 1;
+
+    }
+    to {
+        z-index: -1;
+        opacity: 0;
     }
 }
 

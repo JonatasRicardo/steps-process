@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './modal.scss';
 
@@ -12,11 +12,18 @@ const defaultProps = {
 
 function Modal(props) {
     const { active, children } = props;
+    const [didUpdate, setDidUpdate] = useState(false);
+
+    useEffect(() => {
+        if(active) setDidUpdate(true);
+    }, [active])
+
 
     const activeClass = active ? 'is-active' : '';
+    const isUpdatedClass = didUpdate ? 'is-updated' : '';
  
     return (
-        <div className={`modal ${activeClass}`} role="dialog" data-testid="modal">
+        <div className={`modal ${activeClass} ${isUpdatedClass}`} role="dialog" data-testid="modal">
             <div className="modal__body">
                 {children}
             </div>
