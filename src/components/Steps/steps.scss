@@ -1,0 +1,106 @@
+$colorWhite: #ffffff;
+$colorGray: #b3b3b3;
+$colorBlack: #000;
+$colorGreen: #6cc038;
+$colorBlue: #2e68f1;
+$colorRed: #c10000;
+
+.steps-container{
+    flex-direction: row;
+    display: flex;
+    counter-reset: steps;
+}
+
+.step-item {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1;
+    text-align: center;
+    width: 100%;
+
+    &__icon{
+        display: flex;
+        align-items: center;
+        &:after,&:before{
+            content: "";
+            flex-grow: 1;
+            height: 3px;
+            background-color: $colorGray;
+        }
+        > span {
+            background: $colorGray;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            margin: 0 5px;
+            text-align: center;
+            color: $colorWhite;
+        }
+    }
+    &__index{
+        font-size: 0.7em;
+        display: block;
+        text-align: center;
+    }
+    &__title {
+        color: $colorGray;
+        padding: 10px 0;
+        font-size: 1em;
+    }
+    &__status {
+        margin:  10px 0;
+    }
+    &__status-name {
+        color: $colorGray;
+        font-size: 0.85em;
+    }
+    &__status-date {
+        color: $colorBlack;
+        font-size: .9em;
+        margin: 5px 0;
+    }
+
+    &:first-child {
+        .step-item__icon{
+            &:before{
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    &:last-child {
+        .step-item__icon{
+            &:after{
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    &.is-done {
+        .step-item__index{
+            display: none;
+        }
+        .step-item__icon{
+
+            &:before{
+                background-color: $colorGreen;
+            }
+            > span {
+                background: transparent;
+                path {
+                    fill: $colorGreen;
+                }
+            }
+        }
+    }
+    &.is-next-done {
+        .step-item__icon{
+
+            &:after{
+                background-color: $colorGreen;
+            }
+        }
+    }
+}
