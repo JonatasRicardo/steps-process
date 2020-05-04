@@ -126,7 +126,11 @@
     .modal{
         overflow: hidden;
         overflow-y: scroll;
-
+        position: absolute;
+        &_body{
+            display: flex;
+            flex-direction: column;
+        }
         &__header{
             padding-right: 50px;
         }
