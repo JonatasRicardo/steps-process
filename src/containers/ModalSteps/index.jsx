@@ -54,7 +54,7 @@ function ModalSteps(props) {
                     />
                 )}
             </StepsContainer>
-            <footer style={{ textAlign: 'right', padding: '37px 13px' }}>
+            <footer style={{ textAlign: 'right', padding: '37px 13px 12px' }}>
                 <Button onClick={prevStep} light>Reinstate</Button>
                 <Button onClick={nextStep}>Draft revisions</Button>
             </footer>

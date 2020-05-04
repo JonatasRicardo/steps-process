@@ -10,7 +10,7 @@
     opacity: 0;
     display: flex;
     justify-content: space-around;
-    transition: all .5s;
+    @include transition(all .5s);
 
     &__header{
         position: relative;
@@ -18,13 +18,13 @@
         margin-bottom: 30px;
         h1 {
             color: $colorBlack;
-            font-size: 20px;
+            @include font-size(20px);
             margin: 5px 0 2px;
             font-weight: 500;
             letter-spacing: .3px;
         }
         label {
-            font-size: 12px;
+            @include font-size(12px);
             background-color: $colorRed;
             color: $colorWhite;
             padding: 1px 8px 1px 9px;
@@ -38,7 +38,7 @@
         h4 {
             font-weight: 100;
             margin: 0;
-            font-size: 13px;
+            @include font-size(13px);
             letter-spacing: 0.5px;
         }
         button {
@@ -47,7 +47,6 @@
             top: 11px;
             border: 0;
             background: transparent;
-            font-size: 1em;
             cursor: pointer;
             border-radius: 50%;
             background-color: $colorWhite;
@@ -55,7 +54,7 @@
             text-align: center;
             width: 30px;
             height: 30px;
-            transition: all .5s;
+            @include transition(all .5s);
 
             img {
                 width: 12px;
@@ -75,18 +74,17 @@
         width: 920px;
         max-width: 95%;
         height: 327px;
-        background-color: #fff;
+        background-color: $colorWhite;
         margin-top: 100px;
         z-index: 1;
         border-radius: 5px;
         box-shadow: 10px 10px 68px -17px rgba(0,0,0,0.75);
         position: relative;
-        overflow: hidden;
         padding-top: 4px;
         
         &:before{
             content: '';
-            background: linear-gradient(90deg, $colorDarkBlue 0%, $colorLightBlue 100%);
+            @include gradient($colorDarkBlue, $colorLightBlue);
             height: 4px;
             width: 100%;
             position: absolute;
@@ -98,7 +96,13 @@
             border: 1px solid $colorGrayLight;
             border-top: 0;
             padding: 10px;
+            border-radius: 0 0 5px 5px;
+            background-color: $colorWhite;
         }
+
+        // @include bp-small {
+        //     height: auto;
+        // }
     }
     &__overlay{
         background-color: #000;
@@ -109,16 +113,13 @@
     }
 
     &.is-updated{
-        animation: fadeOut .5s;
-        animation-fill-mode: forwards;
+         @include animation('fadeOut .5s forwards');
     }
 
     &.is-active {
-        animation: fadeIn 1s;
-        animation-fill-mode: forwards;
+         @include animation('fadeIn 1s forwards');
         .modal__body{
-            animation: fromBottom 1s;
-            animation-fill-mode: forwards;
+             @include animation('fromBottom 1s forwards');
         }
         .modal__overlay{
 
@@ -126,7 +127,14 @@
     }
 }
 
-@keyframes fadeIn {
+@include bp-medium{
+    .modal{
+        &__header{
+            padding-right: 50px;
+        }
+    }
+}
+@include keyframes(fadeIn) {
     from {
         z-index: -1;
         opacity: 0;
@@ -137,7 +145,7 @@
     }
 }
 
-@keyframes fadeOut {
+@include keyframes(fadeOut) {
     from {
         z-index: 1;
         opacity: 1;
@@ -149,7 +157,7 @@
     }
 }
 
-@keyframes fromBottom {
+@include keyframes(fromBottom) {
     from {
         margin-top: 200vh;
     }
