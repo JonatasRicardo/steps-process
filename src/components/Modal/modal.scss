@@ -81,6 +81,7 @@
         box-shadow: 10px 10px 68px -17px rgba(0,0,0,0.75);
         position: relative;
         padding-top: 4px;
+        margin-top: 200vh;
         
         &:before{
             content: '';
@@ -99,10 +100,6 @@
             border-radius: 0 0 5px 5px;
             background-color: $colorWhite;
         }
-
-        // @include bp-small {
-        //     height: auto;
-        // }
     }
     &__overlay{
         background-color: #000;
@@ -117,12 +114,9 @@
     }
 
     &.is-active {
-         @include animation('fadeIn 1s forwards');
+        @include animation('fadeIn .3s forwards');
         .modal__body{
-             @include animation('fromBottom 1s forwards');
-        }
-        .modal__overlay{
-
+             @include animation('fromBottom 1s .3s forwards');
         }
     }
 }

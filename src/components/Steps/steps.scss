@@ -117,12 +117,6 @@
             &:after,&:before{
                 display: none;
             }
-            > span {
- 
-            }
-            img {
-
-            }
         }
         &__title {
             padding: 15px;
@@ -145,22 +139,6 @@
     
         &.is-done {
             border-color: $colorGreen;
-
-            // .step-item__index{
-            //     display: none;
-            // }
-            // .step-item__icon{
-    
-            //     &:before{
-            //         background-color: $colorGreen;
-            //     }
-            //     > span {
-            //         background: transparent;
-            //         path {
-            //             fill: $colorGreen;
-            //         }
-            //     }
-            // }
         }
     }
 }
