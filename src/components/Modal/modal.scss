@@ -124,8 +124,15 @@
 
 @include bp-medium{
     .modal{
+        overflow: hidden;
+        overflow-y: scroll;
+
         &__header{
             padding-right: 50px;
+        }
+
+        &__overlay{
+            position: fixed;
         }
     }
 }
