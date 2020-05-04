@@ -25,7 +25,9 @@ function Modal(props) {
     return (
         <div className={`modal ${activeClass} ${isUpdatedClass}`} role="dialog" data-testid="modal">
             <div className="modal__body">
-                {children}
+                <div className="modal__body-container">
+                    {children}
+                </div>
             </div>
             <div className="modal__overlay" />
         </div>

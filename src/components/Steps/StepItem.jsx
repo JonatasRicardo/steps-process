@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
+import stepIcon from './img/step-icon.png';
 import './steps.scss';
 
 const propTypes = {
@@ -35,7 +35,7 @@ function StepItem(props) {
         <div role="listitem" className={`step-item ${doneClass} ${nextDoneClass}`} data-testid="step-item">
             <span className="step-item__icon">
                 <span>
-                    {done &&  <FontAwesomeIcon icon={faCheck} aria-labelledby="step done" />}
+                    {done && <img src={stepIcon} alt="step done" />}
                     <span className="step-item__index">{stepIndex}</span>
                 </span>
             </span>

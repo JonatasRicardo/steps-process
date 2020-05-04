@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import closeIcon from './img/close-icon.png';
 import './modal.scss';
+
 
 const propTypes = {
     title: PropTypes.string.isRequired,
@@ -22,7 +24,12 @@ function ModalHeader(props) {
         <header className="modal__header">
             <h1>{title} {label && <label>{label}</label>}</h1>
             <h4>{subtitle}</h4>
-            {hasCloseButton && <button onClick={onCloseButtonClick} data-testid="btn-close-modal">x</button>}
+            {
+                hasCloseButton && 
+                <button onClick={onCloseButtonClick} data-testid="btn-close-modal">
+                    <img src={closeIcon} alt="x" />
+                </button>
+            }
         </header>
     );
 }

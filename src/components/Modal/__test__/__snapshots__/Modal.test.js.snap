@@ -8,7 +8,11 @@ exports[`<Modal/> Snapshot Modal 1`] = `
 >
   <div
     class="modal__body"
-  />
+  >
+    <div
+      class="modal__body-container"
+    />
+  </div>
   <div
     class="modal__overlay"
   />
@@ -24,25 +28,32 @@ exports[`<Modal/> Snapshot Modal with header 1`] = `
   <div
     class="modal__body"
   >
-    <header
-      class="modal__header"
+    <div
+      class="modal__body-container"
     >
-      <h1>
-        Engagement Process
-         
-        <label>
-          Abandoned
-        </label>
-      </h1>
-      <h4>
-        2019 Fall Oncology Advisory Board
-      </h4>
-      <button
-        data-testid="btn-close-modal"
+      <header
+        class="modal__header"
       >
-        x
-      </button>
-    </header>
+        <h1>
+          Engagement Process
+           
+          <label>
+            Abandoned
+          </label>
+        </h1>
+        <h4>
+          2019 Fall Oncology Advisory Board
+        </h4>
+        <button
+          data-testid="btn-close-modal"
+        >
+          <img
+            alt="x"
+            src="close-icon.png"
+          />
+        </button>
+      </header>
+    </div>
   </div>
   <div
     class="modal__overlay"

@@ -2,8 +2,8 @@ import React from 'react';
 import { Provider } from 'react-redux';
 
 import store from './redux/store';
-
 import ModalSteps from './containers/ModalSteps';
+import './app.scss';
 
 function App() {
   return (
