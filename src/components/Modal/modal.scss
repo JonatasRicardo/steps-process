@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-around;
     @include transition(all .5s);
+    font-family: 'Jost', sans-serif;
 
     &__header{
         position: relative;

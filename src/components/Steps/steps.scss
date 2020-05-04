@@ -4,12 +4,14 @@
     flex-direction: row;
     display: flex;
     padding: 0 5px;
+    font-family: 'Jost', sans-serif;
 }
 
 .step-item {
     flex-grow: 1;
     text-align: center;
     width: 100%;
+    font-family: 'Jost', sans-serif;
 
     &__icon{
         display: flex;
