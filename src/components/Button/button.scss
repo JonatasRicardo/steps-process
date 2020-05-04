@@ -7,8 +7,8 @@
     margin-left: 5px;
     background-color: $colorBlue;
     color: #ffffff;
-    padding: 10px 18px;
-    @include font-size(15px);
+    padding: 8px 20px;
+    @include font-size(16px);
     font-weight: 100;
     @include transition(box-shadow .5s);
     box-shadow: 0px 4px 10px -1px #bcc4dc;
