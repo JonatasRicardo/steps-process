@@ -2,8 +2,8 @@
 
 .modal {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
     z-index: -1;
@@ -82,7 +82,7 @@
         box-shadow: 10px 10px 68px -17px rgba(0,0,0,0.75);
         position: relative;
         padding-top: 4px;
-        margin-top: 200vh;
+        margin-top: 200%;
         
         &:before{
             content: '';
@@ -111,13 +111,13 @@
     }
 
     &.is-updated{
-         @include animation('fadeOut .5s forwards');
+         @include animation('fadeOut .15s forwards');
     }
 
     &.is-active {
-        @include animation('fadeIn .3s forwards');
+        @include animation('fadeIn .15s forwards');
         .modal__body{
-             @include animation('fromBottom 1s .3s forwards');
+             @include animation('fromBottom .3s .15s forwards');
         }
     }
 }
@@ -165,7 +165,7 @@
 
 @include keyframes(fromBottom) {
     from {
-        margin-top: 200vh;
+        margin-top: 200%;
     }
     to {
         margin-top: 100px;
